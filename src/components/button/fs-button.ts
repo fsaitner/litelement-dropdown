@@ -5,11 +5,11 @@ import { classMap } from 'lit/directives/class-map.js';
 import '../icon/fs-icon';
 
 /**
- * The fs-button element
+ * @summary The fs-button element.
  *
  * @dependency fs-icon
  *
- * @slot - The label of the button
+ * @slot - The label of the button.
  */
 @customElement('fs-button')
 export class fsButton extends LitElement {

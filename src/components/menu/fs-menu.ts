@@ -3,9 +3,9 @@ import { LitElement, html, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
 /**
- * The fs-menu element
+ * @summary The fs-menu element.
  *
- * @slot - The content of the menu
+ * @slot - The content of the menu.
  */
 @customElement('fs-menu')
 export class fsMenu extends LitElement {

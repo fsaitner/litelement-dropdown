@@ -3,9 +3,9 @@ import { LitElement, html, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
 /**
- * The fs-icon element
+ * @summary The fs-icon element.
  *
- * @slot - This element has no slot
+ * @slot - This element has no slot.
  */
 @customElement('fs-icon')
 export class fsIcon extends LitElement {

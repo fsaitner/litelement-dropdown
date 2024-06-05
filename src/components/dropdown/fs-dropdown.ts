@@ -3,17 +3,17 @@ import { LitElement, html, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
 /**
- * The fs-dropdown element
+ * @summary The fs-dropdown element.
  *
- * @slot - The content of the menu
- * @slot trigger - The dropdown trigger element
+ * @slot - The content of the menu.
+ * @slot trigger - The dropdown trigger element.
  */
 @customElement('fs-dropdown')
 export class fsDropdown extends LitElement {
   /**
    * Display the dropdown content in open state.
    */
-  @property({ type: Boolean })
+  @property({ type: Boolean, reflect: true })
   open: boolean = false;
 
   static get styles() {
