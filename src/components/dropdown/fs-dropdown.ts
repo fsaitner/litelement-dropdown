@@ -1,6 +1,6 @@
-import styles from './fs-dropdown.scss?inline';
 import { LitElement, html, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import styles from './fs-dropdown.scss?inline';
 
 /**
  * @summary The fs-dropdown element.
@@ -52,7 +52,7 @@ export class fsDropdown extends LitElement {
   /**
    * Hide default slot content when click outside of element.
    */
-  handleOutsideClick(event: MouseEvent) {
+  private handleOutsideClick(event: MouseEvent) {
     if (!event.composedPath().includes(this)) {
       this.open = false;
     }
@@ -61,7 +61,7 @@ export class fsDropdown extends LitElement {
   /**
    * Toggle visibility of default slot content trigger element click.
    */
-  handleTriggerClick() {
+  private handleTriggerClick() {
     this.open = !this.open;
   }
 }

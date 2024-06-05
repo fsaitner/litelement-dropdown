@@ -1,8 +1,8 @@
-import styles from './fs-button.scss?inline';
 import { LitElement, html, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
 import '../icon/fs-icon';
+import styles from './fs-button.scss?inline';
 
 /**
  * @summary The fs-button element.

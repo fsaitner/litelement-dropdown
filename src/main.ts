@@ -1,9 +1,9 @@
-import './style.scss';
-import './components/icon/fs-icon';
 import './components/button/fs-button';
+import './components/dropdown/fs-dropdown';
+import './components/icon/fs-icon';
 import './components/menu-item/fs-menu-item';
 import './components/menu/fs-menu';
-import './components/dropdown/fs-dropdown';
+import './style.scss';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <h1>LitElement Dropdown Component</h1>
