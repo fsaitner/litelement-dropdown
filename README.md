@@ -20,4 +20,4 @@ To run the dev server:
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in the browser for preview.
+Open [http://localhost:3000](http://localhost:3000) in the browser for preview.
