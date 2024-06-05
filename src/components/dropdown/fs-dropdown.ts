@@ -16,6 +16,12 @@ export class fsDropdown extends LitElement {
   @property({ type: Boolean, reflect: true })
   open: boolean = false;
 
+  /**
+   * The position of the dropdown menu.
+   */
+  @property({ type: String, reflect: true })
+  position: 'left' | 'right' = 'left';
+
   static get styles() {
     return [unsafeCSS(styles)];
   }

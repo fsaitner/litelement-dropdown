@@ -9,18 +9,12 @@ import { customElement, property } from 'lit/decorators.js';
  */
 @customElement('fs-menu')
 export class fsMenu extends LitElement {
-  /**
-   * The alignment of the menu to the parent.
-   */
-  @property({ type: String, reflect: true })
-  align: 'left' | 'right' = 'left';
-
   static get styles() {
     return [unsafeCSS(styles)];
   }
 
   render() {
-    return html` <slot></slot> `;
+    return html`<slot></slot>`;
   }
 }
 

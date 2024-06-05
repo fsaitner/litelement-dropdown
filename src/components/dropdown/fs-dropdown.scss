@@ -1,5 +1,19 @@
 @import '../../styles/_variables.scss';
+
 :host {
   position: relative;
   display: inline-block;
+}
+
+::slotted(fs-menu) {
+  position: absolute;
+  right: auto;
+  left: 0;
+}
+
+:host([position='right']) {
+  ::slotted(fs-menu) {
+    right: 0;
+    left: auto;
+  }
 }
