@@ -7,7 +7,7 @@
   "description": "A LitElement Dropdown Component",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build --emptyOutDir",
     "preview": "vite preview",
     "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
     "lint:eslint": "eslint 'src/**/*.ts'",
