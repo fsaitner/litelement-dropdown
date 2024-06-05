@@ -4,9 +4,11 @@
 :host {
   display: block;
 }
+
 fs-icon {
   margin-left: 0.5rem;
 }
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -23,12 +25,15 @@ fs-icon {
   vertical-align: middle;
   cursor: pointer;
 }
+
 .button--primary {
   @include button-variant($color-primary);
 }
+
 .button--secondary {
   @include button-variant($color-secondary);
 }
+
 .button--success {
   @include button-variant($color-success);
 }
