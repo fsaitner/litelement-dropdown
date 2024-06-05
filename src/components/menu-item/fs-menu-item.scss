@@ -1,0 +1,15 @@
+@import '../../styles/_variables.scss';
+
+:host {
+  display: block;
+  padding: 0.375rem;
+  cursor: pointer;
+  text-align: left;
+  text-wrap: nowrap;
+}
+:host(:hover) {
+  background-color: $color-menu-item-hover;
+}
+:host([active]) {
+  background-color: $color-primary;
+}
