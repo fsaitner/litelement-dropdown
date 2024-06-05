@@ -1,15 +1,34 @@
 {
-  "name": "litelement-dropdown",
+  "name": "@fsaitner/litelement-dropdown",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "Florian Saitner",
+  "description": "A LitElement Dropdown Component",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
+    "lint:eslint": "eslint 'src/**/*.ts'",
+    "lint:lit-analyzer": "lit-analyzer",
+    "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
+    "analyze": "cem analyze --litelement --globs \"src/**/*.ts\""
   },
   "devDependencies": {
-    "typescript": "^5.2.2",
+    "@custom-elements-manifest/analyzer": "^0.10.2",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "lit-analyzer": "^2.0.3",
+    "prettier": "^3.2.5",
+    "sass": "^1.77.2",
+    "ts-lit-plugin": "^2.0.2",
+    "typescript": "^5.4.5",
     "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "lit": "^3.1.3"
   }
 }
