@@ -14,7 +14,18 @@ export class fsMenu extends LitElement {
   }
 
   render() {
-    return html`<slot></slot>`;
+    return html`<slot @click=${this.handleClick}></slot>`;
+  }
+
+  /**
+   * Dispatch new event when menu item selected.
+   */
+  private handleClick() {
+    const itemSelectEvent = new Event('fs-item-select', {
+      bubbles: true,
+      composed: true,
+    });
+    this.dispatchEvent(itemSelectEvent);
   }
 }
 

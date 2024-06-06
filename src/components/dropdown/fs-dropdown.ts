@@ -26,19 +26,28 @@ export class fsDropdown extends LitElement {
     return [unsafeCSS(styles)];
   }
 
-  /**
-   * Add click event listener to the document.
-   */
-  connectedCallback() {
-    super.connectedCallback();
-    document.addEventListener('click', this.handleOutsideClick.bind(this));
+  constructor() {
+    super();
+    this.handleOutsideClick = this.handleOutsideClick.bind(this);
+    /**
+     * Listen for item select event from fs-menu
+     */
+    this.addEventListener('fs-item-select', this.handleItemSelect as EventListener);
   }
 
   /**
-   * Remove click event listener from the document.
+   * Add click event listener to document.
+   */
+  connectedCallback() {
+    super.connectedCallback();
+    document.addEventListener('click', this.handleOutsideClick as EventListener);
+  }
+
+  /**
+   * Remove click event listener from document.
    */
   disconnectedCallback() {
-    document.removeEventListener('click', this.handleOutsideClick.bind(this));
+    document.removeEventListener('click', this.handleOutsideClick as EventListener);
     super.disconnectedCallback();
   }
 
@@ -47,6 +56,15 @@ export class fsDropdown extends LitElement {
       <slot name="trigger" @click=${this.handleTriggerClick}></slot>
       <slot ?hidden="${!this.open}"></slot>
     `;
+  }
+
+  /**
+   * Hide default slot content when menu item selected.
+   */
+  private handleItemSelect() {
+    if (this.open) {
+      this.open = false;
+    }
   }
 
   /**
