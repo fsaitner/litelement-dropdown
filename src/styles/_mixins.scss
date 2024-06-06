@@ -7,7 +7,7 @@
     transition: all 0.3s ease;
   }
   &:active {
-    background: lighten($background-color, 25%);
-    border-color: lighten($background-color, 25%);
+    background: lighten($background-color, 15%);
+    border-color: lighten($background-color, 15%);
   }
 }
