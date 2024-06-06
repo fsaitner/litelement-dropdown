@@ -1,6 +1,6 @@
-import styles from './fs-menu-item.scss?inline';
 import { LitElement, html, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import styles from './fs-menu-item.scss?inline';
 
 /**
  * @summary The fs-menu-item element.

@@ -10,8 +10,10 @@
 
 :host(:hover) {
   background-color: $color-menu-item-hover;
+  color: $color-menu-item;
 }
 
 :host([active]) {
   background-color: $color-primary;
+  color: $color-menu-item;
 }

@@ -1,0 +1,28 @@
+@import './_variables.scss';
+
+:root {
+  background-color: $color-body-bg;
+  color: $color-body;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  place-items: center;
+}
+
+fs-playground {
+  max-width: 1280px;
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+@import '../../styles/_variables.scss';
+
+.playground__settings {
+  display: block;
+  margin: 2rem 0 0;
+}
+
+label {
+  display: inline-block;
+  padding-right: 0.5rem;
+  margin-right: 0.25rem;
+  &:not(:last-child) {
+    border-right: 1px solid $color-body;
+  }
+}
