@@ -1,13 +1,15 @@
+@use 'sass:color';
+
 @mixin button-variant($background-color) {
   background: $background-color;
   border-color: $background-color;
   &:hover {
-    background: lighten($background-color, 8%);
-    border-color: lighten($background-color, 8%);
+    background: color.adjust($background-color, $lightness: 8%);
+    border-color: color.adjust($background-color, $lightness: 8%);
     transition: all 0.3s ease;
   }
   &:active {
-    background: lighten($background-color, 15%);
-    border-color: lighten($background-color, 15%);
+    background: color.adjust($background-color, $lightness: 15%);
+    border-color: color.adjust($background-color, $lightness: 15%);
   }
 }
