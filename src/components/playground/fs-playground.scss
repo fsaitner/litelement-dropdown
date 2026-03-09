@@ -1,4 +1,4 @@
-@import '../../styles/_variables.scss';
+@use '../../styles/_variables.scss';
 
 .playground__settings {
   display: block;
@@ -10,6 +10,6 @@ label {
   padding-right: 0.5rem;
   margin-right: 0.25rem;
   &:not(:last-child) {
-    border-right: 1px solid $color-body;
+    border-right: 1px solid variables.$color-body;
   }
 }

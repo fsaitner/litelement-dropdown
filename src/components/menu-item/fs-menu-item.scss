@@ -1,4 +1,4 @@
-@import '../../styles/_variables.scss';
+@use '../../styles/_variables.scss';
 
 :host {
   display: block;
@@ -9,11 +9,11 @@
 }
 
 :host(:hover) {
-  background-color: $color-menu-item-hover;
-  color: $color-menu-item;
+  background-color: variables.$color-menu-item-hover;
+  color: variables.$color-menu-item;
 }
 
 :host([active]) {
-  background-color: $color-primary;
-  color: $color-menu-item;
+  background-color: variables.$color-primary;
+  color: variables.$color-menu-item;
 }

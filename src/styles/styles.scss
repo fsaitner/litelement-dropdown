@@ -1,8 +1,8 @@
-@import './_variables.scss';
+@use '_variables.scss';
 
 :root {
-  background-color: $color-body-bg;
-  color: $color-body;
+  background-color: variables.$color-body-bg;
+  color: variables.$color-body;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;

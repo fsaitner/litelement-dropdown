@@ -1,5 +1,5 @@
-@import '../../styles/_mixins.scss';
-@import '../../styles/_variables.scss';
+@use '../../styles/_mixins.scss';
+@use '../../styles/_variables.scss';
 
 :host {
   display: block;
@@ -14,7 +14,7 @@ fs-icon {
   align-items: center;
   padding: 0.375rem 0.75rem;
   border-width: 1px;
-  color: $color-menu-item;
+  color: variables.$color-menu-item;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
@@ -27,13 +27,13 @@ fs-icon {
 }
 
 .button--primary {
-  @include button-variant($color-primary);
+  @include mixins.button-variant(variables.$color-primary);
 }
 
 .button--secondary {
-  @include button-variant($color-secondary);
+  @include mixins.button-variant(variables.$color-secondary);
 }
 
 .button--success {
-  @include button-variant($color-success);
+  @include mixins.button-variant(variables.$color-success);
 }
